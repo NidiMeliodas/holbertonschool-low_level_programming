@@ -3,12 +3,9 @@
 /**
 * main = Program
 *
-* return : 0 
+* return : 
 */
-
-
-
-int main(void)
+iint main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
