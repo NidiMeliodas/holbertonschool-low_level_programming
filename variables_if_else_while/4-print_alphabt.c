@@ -2,10 +2,11 @@
 
 int main(void)
 {
-	int c;
+	char c;
+	char q ='q',e='e';
 	for (c = 'a'; c <= 'z'; c++)
 	{
-		if (c =! 'e' && c =! 'q')
+		if (c =! q && c =! e)
 		{
 			putchar(c);
 		}
