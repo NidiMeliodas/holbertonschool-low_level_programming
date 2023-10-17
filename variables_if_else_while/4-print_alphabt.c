@@ -8,8 +8,7 @@
 int main(void)
 {
 	char c;
-	char q ='q',e='e';
-	
+	char q = 'q', e = 'e';
 	for (c = 'a'; c <= 'z'; c++)
 	{
 		if (c != q && c != e)
@@ -19,6 +18,5 @@ int main(void)
 	}
 
 	putchar('\n');
-	
 	return (0);
 }
