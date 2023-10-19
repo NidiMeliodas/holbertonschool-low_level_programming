@@ -3,7 +3,7 @@
 /**
  * int _isalpha - Chechs letters
  * @c: the checked character
- * Return: 1 if c = letter ,else 0 
+ * Return: 1 if c = letter ,else 0
  */
 
 int _isalpha(int c)
@@ -15,6 +15,5 @@ int _isalpha(int c)
 	else
 	{
 		return (0);
-	
 	}
 }
