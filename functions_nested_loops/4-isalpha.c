@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * int _isalpha - Chechs letters
+ * _isalpha - Chechs letters
  * @c: the checked character
  * Return: 1 if c = letter ,else 0
  */
