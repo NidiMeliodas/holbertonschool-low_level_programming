@@ -8,10 +8,11 @@
 
 void times_table(void)
 {
-	int i;
+	int c;
 
-	for (i = 0; i < 10; i++)
+	for (c = 0; c < 10; c++)
 	{
+		_putchar(0 + '0');
 
 	}
 
