@@ -22,11 +22,22 @@ void times_table(void)
 		for (l = 0; l <= 9;l++)
 		{
 			r=c*l;
-			_putchar((r/10)+'0');
-			_putchar((r%10)+'0');
-			_putchar(44);
-			_putchar(32);
-			_putchar(32);
+			u=r%10;
+			d=r/10;
+			
+
+			if ( d == 0)
+			{
+				_putchar(d+'0');
+				_putchar(u+'0');
+				_putchar(44);
+				_putchar(32);
+				_putchar(32);
+			}
+			else if (d != 0)
+			{
+
+			}
 		}
 		_putchar('\n');
 	}
