@@ -29,7 +29,7 @@ void times_table(void)
 			r = c * l;
 			u = r % 10;
 			d = r / 10;
-			if (d == 0 )
+			if (d == 0)
 			{
 				_putchar(44);
 				_putchar(32);
