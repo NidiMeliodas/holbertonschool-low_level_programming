@@ -26,10 +26,10 @@ void times_table(void)
 		_putchar(0 + '0');
 		for (l = 1; l <= 9; l++)
 		{
-			r = c*l;
-			u = r%10;
-			d = r/10;
-			if ( d == 0 )
+			r = c * l;
+			u = r % 10;
+			d = r / 10;
+			if (d == 0 )
 			{
 				_putchar(44);
 				_putchar(32);
