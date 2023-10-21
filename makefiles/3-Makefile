@@ -1,18 +1,54 @@
+# Compiler
 CC = gcc
+
+# Source files
 SRC = main.c school.c
-OBJ = $(SRC:.c=.o)
+
+# Name of the executable
 NAME = school
+
+# Derived variable for object files
+OBJ = $(SRC:.c=.o)
+
+# Compiler flags
+CFLAGS = -Wall
+
+# Program for file deletion
 RM = rm -f
 
-all : $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+# Default target: 'all' will build the executable
+all: $(NAME)
 
-clean :
-	$(RM) *~ $(all)
+# Include dependency files
+-include $(DEP)
 
-oclean :
+# Build the executable
+$(NAME): $(OBJ)
+	$(CC) -o $@ $^
+
+# Compile source files to object files and generate dependency files
+%.o: %.c
+	$(CC) -MMD -MP $(CFLAGS) -c -o $@ $<
+
+# Clean rule to remove Emacs and Vim temporary files, and the executable
+clean:
+	$(RM) *~ $(NAME)
+
+# Oclean rule to delete object files
+oclean:
 	$(RM) $(OBJ)
 
-fclean : clean oclean
+# Fclean rule to delete Emacs and Vim temporary files, the executable, and object files
+fclean: clean oclean
 
-re : oclean all
+# Re rule to force recompilation of all source files
+re: oclean all
+
+# Delete dependency files
+clean-dep:
+	$(RM) $(DEP)
+
+# Dependency files
+DEP = $(OBJ:.o=.d)
+
+.PHONY: all clean oclean fclean re
