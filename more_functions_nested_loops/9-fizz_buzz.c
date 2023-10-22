@@ -9,8 +9,10 @@ int main(void)
 {
 	int num;
 
-	for (num = 0; num < 100; num++)
+	num = 0;
+	while (num < 100)
 	{
+		num++;
 		if ((num % 3) != 0 && (num % 5) != 0)
 		{
 			printf("%d", num);
