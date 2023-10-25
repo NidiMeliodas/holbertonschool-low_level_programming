@@ -6,15 +6,15 @@
  *
  * Return: int
  */
-
 int _strlen(char *s)
 {
-	int lenght = 0;
-	
-	for (lenght[s] = 0; *s != '\0';s++)
+	int length = 0;
+
+	while (*s != '\0')
 	{
-		lenght++;
+		length++;
+		s++;
 	}
-	return (lenght);
- 
+
+	return (length);
 }
