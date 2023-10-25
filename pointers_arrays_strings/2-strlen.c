@@ -11,7 +11,7 @@ int _strlen(char *s)
 {
 	int lenght = 0;
 	
-	for (s = 0; *s != '0';s++)
+	for (lenght[s] = 0; *s != '0';s++)
 	{
 		lenght++;
 	}
