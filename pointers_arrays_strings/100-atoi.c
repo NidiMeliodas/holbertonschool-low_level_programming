@@ -16,8 +16,8 @@ int _atoi(char *s)
 		if (s[x] == '-')
 		{
 			moins *= -1;
-			x++;
 		}
+		x++;
 	}
 	while (s[x] >= '0' && s[x] <= '9')
 	{
@@ -27,6 +27,7 @@ int _atoi(char *s)
 			result *= moins;
 			return (result);
 		}
+		x++;
 	}
 	return (result);
 }
