@@ -21,8 +21,9 @@ int _atoi(char *s)
 	}
 	while (s[x] >= '0' && s[x] <= '9')
 	{
-		x++;
+		
 		result = (result * 10) + (s[x] + '0');
+		x++
 		if ( s[x] < '0' || s[x] > '9')
 		{
 			result *= moins;
