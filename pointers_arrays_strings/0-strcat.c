@@ -12,17 +12,12 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int i = 0;
-	int j = 0;
-	char desti = (*(dest + i));
-	char srcj = (*(src + j));
+	int i = 0, j = 0;
 
-	while (desti)
-	{
+	while (*(dest + i))
 		i++;
-	}
 
-	while ((desti  = srcj))
+	while ((*(dest + i) = *(src + j)))
 	{
 		i++;
 		j++;
