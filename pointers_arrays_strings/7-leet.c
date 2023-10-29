@@ -40,5 +40,5 @@ char *leet(char *s)
 		}
 		ptr++;
 	}
-	return str;
+	return s;
 }
