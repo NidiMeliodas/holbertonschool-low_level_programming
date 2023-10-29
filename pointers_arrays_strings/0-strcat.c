@@ -5,7 +5,7 @@
  *
  * @dest:
  *
- * @src: 
+ * @src:
  *
  * Return: pointer string dest
  */
