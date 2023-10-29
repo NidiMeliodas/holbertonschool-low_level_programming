@@ -2,8 +2,8 @@
 
 /**
  * _strchr - Locate character in string.
- * @s:
- * @c:
+ * @s: f
+ * @c: f
  * Return: char*
  */
 char *_strchr(char *s, char c)

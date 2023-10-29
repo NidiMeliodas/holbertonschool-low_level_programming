@@ -2,9 +2,9 @@
 
 /**
  * _memcpy - Copy memory area.
- * @dest:
- * @src:
- * @n:
+ * @dest: f
+ * @src: f
+ * @n: f
  * Return:dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
