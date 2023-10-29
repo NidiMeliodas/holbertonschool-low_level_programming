@@ -22,4 +22,4 @@ void reverse_array(int *a, int n)
 		a[reverse - i] = a[i];
 		a[i] = tempo;
 	}
-}}
+}
