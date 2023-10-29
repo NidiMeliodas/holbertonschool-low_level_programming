@@ -1,31 +1,25 @@
 #include "main.h"
 
 /**
- * _strpbrk - searches a string for any of a set of bytes
+ * reverse_array - everything in reverse.
  *
- * @s: string to be scanned
+ * @a: Array to reverse
  *
- * @accept: string containing the characters to match
+ * @n: Array length
  *
- * Return: pointer to the byte in s that matches one of the bytes in accept,
- *
- * or NULL if no such byte is found
- */
+ * Return: void
+*/
 
-char *_strpbrk(char *s, char *accept)
+void reverse_array(int *a, int n)
 {
-	unsigned int i, j, len = 0;
+	int i, tempo;
+	
+	const int reverse = n - 1;
 
-	for (i = 0; accept[i] != '\0'; i++)
-		len++;
-
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; i < (n / 2); i++)
 	{
-		for (j = 0; j < len; j++)
-		{
-			if (s[i] == accept[j])
-				return (s + i);
-		}
+		tempo = a[reverse - i];
+		a[reverse - i] = a[i];
+		a[i] = tempo;
 	}
-	return ('\0');
-}
+}}
